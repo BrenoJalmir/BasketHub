@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BasketHub">
         <activity
-            android:name=".MainActivity"
+            android:name=".AppHub"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.BasketHub">
@@ -20,6 +20,39 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScoreboardApp"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BasketHub">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalculatorApp"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BasketHub">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GamesApp"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BasketHub">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
