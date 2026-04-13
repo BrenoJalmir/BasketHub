@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import kotlin.math.log10
 import kotlin.math.pow
 
@@ -80,8 +77,8 @@ class CalculatorApp : AppCompatActivity() {
         if (currentInput.isNotEmpty()) {
             val value = currentInput.toDoubleOrNull()
             if (value != null) {
-                if (operand == null) operand = value
-                else operand = performOperation(operand!!, value, pendingOp)
+                operand = if (operand == null) value
+                else performOperation(operand!!, value, pendingOp)
             }
             currentInput = ""
         }
@@ -140,7 +137,7 @@ class CalculatorApp : AppCompatActivity() {
     }
 
     private fun updateDisplay() {
-        tvDisplay.text = if (currentInput.isNotEmpty()) currentInput else (operand?.toString() ?: "0")
+        tvDisplay.text = currentInput.ifEmpty { (operand?.toString() ?: "0") }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

@@ -1,3 +1,41 @@
 <resources>
-    <string name="app_name">BasketHub</string>
+    <string name="app_name">Basket Hub</string>
+    <string name="btn_scoreboard">Digital Scoreboard"</string>
+    <string name="btn_calculator">Calculator</string>
+    <string name="btn_games">Games?</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="time_left">Time Left</string>
+    <string name="str_0">0</string>
+    <string name="str_1">1</string>
+    <string name="str_2">2</string>
+    <string name="str_3">3</string>
+    <string name="str_4">4</string>
+    <string name="str_5">5</string>
+    <string name="str_6">6</string>
+    <string name="str_7">7</string>
+    <string name="str_8">8</string>
+    <string name="str_9">9</string>
+    <string name="dot">.</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <string name="equals">=</string>
+    <string name="power">x^y</string>
+    <string name="root">x^(1/y)</string>
+    <string name="log10">log</string>
+    <string name="factorial">x!</string>
+    <string name="C">C</string>
+    <string name="backspace">⌫</string>
+    <string name="add_3_points">+3 PONTOS</string>
+    <string name="add_2_points">+2 PONTOS</string>
+    <string name="add_free_throw">Tiro Livre</string>
+    <string name="restart_game">Reiniciar Partida"</string>
+    <string name="starting_time">10:00</string>
+    <string name="team_a_placeholder">Time A</string>
+    <string name="team_b_placeholder">Time B</string>
+    <string name="team_a_hint">Nome Time A</string>
+    <string name="team_b_hint">Nome Time B</string>
 </resources>
