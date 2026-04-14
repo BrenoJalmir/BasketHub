@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#222222"
+    android:paddingTop="48dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    >
 
     <TextView
         android:id="@+id/tvTitle"
@@ -13,6 +17,7 @@
         android:text="@string/matches_history"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@android:color/white"
         android:gravity="center"
         android:layout_marginBottom="16dp" />
 
@@ -31,6 +36,8 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
         android:contentDescription="@string/add_match"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@android:color/white"
+        app:backgroundTint="#FD6F00" />
 
 </RelativeLayout>

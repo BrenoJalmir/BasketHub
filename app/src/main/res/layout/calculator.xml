@@ -3,18 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:paddingTop="48dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:background="#222222">
 
     <!-- Display da calculadora -->
     <TextView
         android:id="@+id/txtResultado"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hub_button_background"
         android:gravity="end"
         android:padding="16dp"
         android:text="@string/str_0"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,115 +42,159 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnClear"
             style="@style/Widget.Material3.Button"
-            android:text="@string/C" />
+            android:text="@string/C"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnBackspace"
             style="@style/Widget.Material3.Button"
-            android:text="@string/backspace" />
+            android:text="@string/backspace"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDividir"
             style="@style/Widget.Material3.Button"
-            android:text="@string/divide" />
+            android:text="@string/divide"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMultiplicar"
             style="@style/Widget.Material3.Button"
-            android:text="@string/multiply" />
+            android:text="@string/multiply"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <!-- Linha 2 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn7"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_7" />
+            android:text="@string/str_7"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn8"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_8" />
+            android:text="@string/str_8"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn9"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_9" />
+            android:text="@string/str_9"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSubtrair"
             style="@style/Widget.Material3.Button"
-            android:text="@string/minus" />
+            android:text="@string/minus"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <!-- Linha 3 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn4"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_4" />
+            android:text="@string/str_4"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn5"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_5" />
+            android:text="@string/str_5"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn6"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_6" />
+            android:text="@string/str_6"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSomar"
             style="@style/Widget.Material3.Button"
-            android:text="@string/plus" />
+            android:text="@string/plus"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <!-- Linha 4 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn1"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_1" />
+            android:text="@string/str_1"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn2"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_2" />
+            android:text="@string/str_2"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn3"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_3" />
+            android:text="@string/str_3"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnIgual"
             style="@style/Widget.Material3.Button"
-            android:text="@string/equals" />
+            android:text="@string/equals"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <!-- Linha 5 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn0"
             style="@style/Widget.Material3.Button"
-            android:text="@string/str_0" />
+            android:text="@string/str_0"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnPonto"
             style="@style/Widget.Material3.Button"
-            android:text="@string/dot" />
+            android:text="@string/dot"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnPotencia"
             style="@style/Widget.Material3.Button"
-            android:text="@string/power" />
+            android:text="@string/power"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRaiz"
             style="@style/Widget.Material3.Button"
-            android:text="@string/root" />
+            android:text="@string/root"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLog"
             style="@style/Widget.Material3.Button"
-            android:text="@string/log10" />
+            android:text="@string/log10"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnFat"
             style="@style/Widget.Material3.Button"
-            android:text="@string/factorial" />
+            android:text="@string/factorial"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
     </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

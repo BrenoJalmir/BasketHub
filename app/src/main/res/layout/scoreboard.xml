@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#222222"
     tools:context=".ScoreboardApp">
 
     <LinearLayout
         android:id="@+id/layoutPlacar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -28,7 +30,9 @@
                 android:inputType="textCapCharacters"
                 android:textSize="14sp"
                 android:autofillHints="none"
-                android:hint="@string/team_a_hint" />
+                android:hint="@string/team_a_hint"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA" />
 
             <TextView
                 android:id="@+id/placarTimeA"
@@ -38,28 +42,35 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="@string/str_0"
-                android:textSize="54sp" />
+                android:textSize="54sp"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/tresPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/add_3_points" />
+                android:text="@string/add_3_points"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/doisPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/add_2_points" />
+                android:text="@string/add_2_points"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/tiroLivreA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/add_free_throw" />
+                android:text="@string/add_free_throw"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
@@ -67,7 +78,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@android:color/darker_gray"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -86,7 +97,9 @@
                 android:textSize="14sp"
                 android:fontFamily="sans-serif"
                 android:autofillHints="none"
-                android:hint="@string/team_b_hint" />
+                android:hint="@string/team_b_hint"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA" />
 
             <TextView
                 android:id="@+id/placarTimeB"
@@ -96,28 +109,35 @@
                 android:padding="4dp"
                 android:text="@string/str_0"
                 android:textSize="54sp"
-                android:fontFamily="sans-serif"/>
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/tresPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/add_3_points" />
+                android:text="@string/add_3_points"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/doisPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/add_2_points" />
+                android:text="@string/add_2_points"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/tiroLivreB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/add_free_throw" />
+                android:text="@string/add_free_throw"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
     </LinearLayout>
@@ -137,7 +157,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="@string/starting_time"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="48sp" />
 
         <LinearLayout
@@ -150,14 +170,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/play" />
+                android:text="@string/play"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/btnResetTimer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@string/reset" />
+                android:text="@string/reset"
+                android:background="@drawable/hub_button_background"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 
@@ -168,6 +192,8 @@
         android:text="@string/restart_game"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"/>
+        android:layout_margin="32dp"
+        android:background="@drawable/hub_button_background"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
