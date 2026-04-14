@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Basket Hub</string>
-    <string name="btn_scoreboard">Digital Scoreboard"</string>
-    <string name="btn_calculator">Calculator</string>
-    <string name="btn_games">Games?</string>
+    <string name="app_name">SlamHub</string>
+    <string name="btn_scoreboard">SlamScore"</string>
+    <string name="btn_calculator">SlamCalc</string>
+    <string name="btn_games">SlamMatch</string>
     <string name="play">Play</string>
     <string name="pause">Pause</string>
     <string name="reset">Reset</string>
