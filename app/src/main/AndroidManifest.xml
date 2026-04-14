@@ -58,6 +58,7 @@
             android:exported="false"
             android:label="@string/add_match"
             android:theme="@style/Theme.BasketHub" />
+        <activity android:name=".AstActivity" />
     </application>
 
 </manifest>

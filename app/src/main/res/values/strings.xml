@@ -52,4 +52,5 @@
     <string name="add_match">Adicionar Partida"</string>
     <string name="matches_history">Histórico de Partidas</string>
     <string name="delete_match_description">Remover partida</string>
+    <string name="ast_percent">AST%</string>
 </resources>

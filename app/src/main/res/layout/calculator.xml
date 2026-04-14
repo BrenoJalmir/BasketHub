@@ -196,5 +196,13 @@
             android:text="@string/factorial"
             android:background="@drawable/hub_button_background"
             android:textColor="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAst"
+            style="@style/Widget.Material3.Button"
+            android:text="@string/ast_percent"
+            android:textColor="@android:color/white"
+            android:background="@drawable/hub_button_background"
+            app:backgroundTint="#FD6F00" />
     </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
