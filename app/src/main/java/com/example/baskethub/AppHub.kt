@@ -19,7 +19,7 @@ class AppHub : ComponentActivity() {
         }
 
         findViewById<Button>(R.id.btn_games_app).setOnClickListener {
-            startActivity(Intent(this, GamesApp::class.java))
+            startActivity(Intent(this, GamesHistoryApp::class.java))
         }
     }
 
