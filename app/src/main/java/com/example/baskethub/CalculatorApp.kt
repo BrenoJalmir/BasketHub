@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlin.math.log10
 import kotlin.math.pow
 
+import android.content.Intent
+import com.google.android.material.button.MaterialButton
+
 class CalculatorApp : AppCompatActivity() {
     private lateinit var tvDisplay: TextView
 
@@ -63,6 +66,11 @@ class CalculatorApp : AppCompatActivity() {
 
         // Botão backspace
         findViewById<Button>(R.id.btnBackspace).setOnClickListener { backspace() }
+
+        // Botão AST%
+        findViewById<MaterialButton>(R.id.btnAst).setOnClickListener {
+            startActivity(Intent(this, AstActivity::class.java))
+        }
 
         updateDisplay()
     }
@@ -155,4 +163,6 @@ class CalculatorApp : AppCompatActivity() {
         pendingOp = savedInstanceState.getString("pendingOp")
         updateDisplay()
     }
+
+
 }

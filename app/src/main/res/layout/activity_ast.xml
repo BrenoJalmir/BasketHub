@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvAstTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="AST%"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAstSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Assist Ratio = (AST ÷ (FGA + (0.44 × FTA) + AST + TO)) × 100"
+            android:textColor="#D9D9D9"
+            android:textSize="14sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvAstTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etAst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="AST (Assists)"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"
+            android:padding="16dp"
+            android:background="@drawable/hub_button_background"
+            app:layout_constraintTop_toBottomOf="@id/tvAstSubtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etFga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="FGA (Field Goal Attempts)"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"
+            android:padding="16dp"
+            android:background="@drawable/hub_button_background"
+            app:layout_constraintTop_toBottomOf="@id/etAst"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etFta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="FTA (Free Throw Attempts)"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"
+            android:padding="16dp"
+            android:background="@drawable/hub_button_background"
+            app:layout_constraintTop_toBottomOf="@id/etFga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="TO (Turnovers)"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"
+            android:padding="16dp"
+            android:background="@drawable/hub_button_background"
+            app:layout_constraintTop_toBottomOf="@id/etFta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCalcularAst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Calcular AST%"
+            android:textColor="@android:color/white"
+            android:background="@drawable/hub_button_background"
+            app:backgroundTint="#FD6F00"
+            app:layout_constraintTop_toBottomOf="@id/etTo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLimparAst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Limpar"
+            android:textColor="@android:color/white"
+            android:background="@drawable/hub_button_background"
+            app:layout_constraintTop_toBottomOf="@id/btnCalcularAst"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResultadoAst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="AST Ratio: 0.00%"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/btnLimparAst"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFormulaAst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Cálculo: —"
+            android:textColor="#D9D9D9"
+            android:textSize="14sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvResultadoAst"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
