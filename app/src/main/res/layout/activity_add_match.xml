@@ -2,7 +2,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#222222"
+    android:paddingTop="48dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +19,7 @@
             android:text="@string/add_match"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@android:color/white"
             android:layout_marginBottom="24dp" />
 
         <EditText
@@ -23,7 +28,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/add_team_a_placeholder"
             android:inputType="textCapCharacters"
-            android:autofillHints="none"/>
+            android:autofillHints="none"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
             android:id="@+id/etScoreA"
@@ -31,7 +38,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/add_team_a_points"
             android:inputType="number"
-            android:autofillHints="none" />
+            android:autofillHints="none"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
 
         <Space
             android:layout_width="match_parent"
@@ -43,7 +52,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/add_team_b_placeholder"
             android:inputType="textCapCharacters"
-            android:autofillHints="none" />
+            android:autofillHints="none"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
             android:id="@+id/etScoreB"
@@ -51,7 +62,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/add_team_b_points"
             android:inputType="number"
-            android:autofillHints="none" />
+            android:autofillHints="none"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
 
         <Space
             android:layout_width="match_parent"
@@ -63,7 +76,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/date_example"
             android:inputType="date"
-            android:autofillHints="none"/>
+            android:autofillHints="none"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
             android:id="@+id/etTime"
@@ -71,7 +86,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/hour_example"
             android:inputType="time"
-            android:autofillHints="none" />
+            android:autofillHints="none"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
 
         <EditText
             android:id="@+id/etQuarters"
@@ -80,14 +97,18 @@
             android:hint="@string/number_of_quarters"
             android:inputType="number"
             android:text="@string/str_1"
-            android:autofillHints="none" />
+            android:autofillHints="none"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/btnSaveManualMatch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="@string/save_match" />
+            android:text="@string/save_match"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 </ScrollView>
