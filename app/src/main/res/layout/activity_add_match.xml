@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_match"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etTeamAName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_team_a_placeholder"
+            android:inputType="textCapCharacters"
+            android:autofillHints="none"/>
+
+        <EditText
+            android:id="@+id/etScoreA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_team_a_points"
+            android:inputType="number"
+            android:autofillHints="none" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <EditText
+            android:id="@+id/etTeamBName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_team_b_placeholder"
+            android:inputType="textCapCharacters"
+            android:autofillHints="none" />
+
+        <EditText
+            android:id="@+id/etScoreB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_team_b_points"
+            android:inputType="number"
+            android:autofillHints="none" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/date_example"
+            android:inputType="date"
+            android:autofillHints="none"/>
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hour_example"
+            android:inputType="time"
+            android:autofillHints="none" />
+
+        <EditText
+            android:id="@+id/etQuarters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/number_of_quarters"
+            android:inputType="number"
+            android:text="@string/str_1"
+            android:autofillHints="none" />
+
+        <Button
+            android:id="@+id/btnSaveManualMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/save_match" />
+
+    </LinearLayout>
+</ScrollView>
