@@ -17,7 +17,7 @@
         android:text="@string/matches_history"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="@color/text_primary"
         android:gravity="center"
         android:layout_marginBottom="@dimen/spacing_l" />
 

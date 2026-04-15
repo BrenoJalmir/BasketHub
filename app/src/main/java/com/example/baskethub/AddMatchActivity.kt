@@ -4,13 +4,13 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONArray
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-class AddMatchActivity : ComponentActivity() {
+class AddMatchActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

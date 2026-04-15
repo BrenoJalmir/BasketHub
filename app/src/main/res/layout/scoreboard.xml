@@ -31,8 +31,8 @@
                 android:textSize="14sp"
                 android:autofillHints="none"
                 android:hint="@string/team_a_hint"
-                android:textColor="@android:color/white"
-                android:textColorHint="#AAAAAA" />
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/hint_light" />
 
             <TextView
                 android:id="@+id/placarTimeA"
@@ -43,7 +43,7 @@
                 android:padding="@dimen/spacing_xs"
                 android:text="@string/str_0"
                 android:textSize="54sp"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/text_primary" />
 
             <Button
                 android:id="@+id/tresPontosA"
@@ -98,8 +98,8 @@
                 android:fontFamily="sans-serif"
                 android:autofillHints="none"
                 android:hint="@string/team_b_hint"
-                android:textColor="@android:color/white"
-                android:textColorHint="#AAAAAA" />
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/hint_light" />
 
             <TextView
                 android:id="@+id/placarTimeB"
@@ -110,7 +110,7 @@
                 android:text="@string/str_0"
                 android:textSize="54sp"
                 android:fontFamily="sans-serif"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/text_primary" />
 
             <Button
                 android:id="@+id/tresPontosB"
@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="@string/starting_time"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_primary"
             android:textSize="48sp" />
 
         <LinearLayout

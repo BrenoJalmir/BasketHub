@@ -8,14 +8,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONArray
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-class ScoreboardApp : ComponentActivity() {
+class ScoreboardApp : AppCompatActivity() {
     private var pontuacaoTimeA: Int = 0
     private var pontuacaoTimeB: Int = 0
     private var quartersPlayed: Int = 0

@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:textColor="@android:color/darker_gray" />
+                android:textColor="@color/text_secondary_light" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,7 +41,7 @@
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:gravity="start"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@color/text_primary" />
 
                 <TextView
                     android:id="@+id/tvScore"
@@ -50,7 +50,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:layout_marginHorizontal="@dimen/spacing_l"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@color/text_primary" />
 
                 <TextView
                     android:id="@+id/tvTeamB"
@@ -60,7 +60,7 @@
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:gravity="end"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@color/text_primary" />
             </LinearLayout>
 
             <TextView
@@ -70,7 +70,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/spacing_s"
                 android:textSize="14sp"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/text_secondary_light" />
         </LinearLayout>
 
         <ImageButton

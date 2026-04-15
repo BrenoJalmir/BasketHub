@@ -3,14 +3,14 @@ package com.example.baskethub
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.json.JSONArray
 import java.io.File
 
-class GamesHistoryApp : ComponentActivity() {
+class GamesHistoryApp : AppCompatActivity() {
     private lateinit var rvMatches: RecyclerView
     private lateinit var adapter: MatchAdapter
     private val matchesList = mutableListOf<Match>()
