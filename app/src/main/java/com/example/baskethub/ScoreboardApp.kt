@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import org.json.JSONArray
 import java.io.File
 import java.text.SimpleDateFormat
@@ -137,7 +138,7 @@ class ScoreboardApp : AppCompatActivity() {
     }
 
     private fun showGameEndDialog() {
-        AlertDialog.Builder(this)
+        val dialog = AlertDialog.Builder(this)
             .setTitle("O jogo acabou?")
             .setMessage("Deseja salvar a partida e reiniciar o placar?")
             .setPositiveButton("Sim") { _, _ ->
@@ -149,7 +150,15 @@ class ScoreboardApp : AppCompatActivity() {
                 Toast.makeText(this, "Iniciando Quarto $quartersPlayed + 1", Toast.LENGTH_SHORT).show()
             }
             .setCancelable(false)
-            .show()
+            .create()
+
+        dialog.setOnShowListener {
+            val textColor = ContextCompat.getColor(this, R.color.text_primary)
+            dialog.getButton(AlertDialog.BUTTON_POSITIVE)?.setTextColor(textColor)
+            dialog.getButton(AlertDialog.BUTTON_NEGATIVE)?.setTextColor(textColor)
+        }
+
+        dialog.show()
     }
 
     private fun pauseTimer() {
