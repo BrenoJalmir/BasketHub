@@ -20,7 +20,7 @@ class ScoreboardApp : AppCompatActivity() {
     private var pontuacaoTimeA: Int = 0
     private var pontuacaoTimeB: Int = 0
     private var quartersPlayed: Int = 0
-    private var quarterTimeMillis: Long = 3000
+    private var quarterTimeMillis: Long = 600000
 
     private lateinit var pTimeA: TextView
     private lateinit var pTimeB: TextView
