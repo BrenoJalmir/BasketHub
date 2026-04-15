@@ -1,6 +1,7 @@
 package com.example.baskethub
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Button
@@ -62,6 +63,7 @@ class ScoreboardApp : ComponentActivity() {
         bDoisPontosTimeB = findViewById(R.id.doisPontosB)
         bTLivreTimeB = findViewById(R.id.tiroLivreB)
         val bReiniciarPartida: Button = findViewById(R.id.reiniciarPartida)
+        val bHub: Button = findViewById(R.id.btnHub)
 
         bTresPontosTimeA.setOnClickListener { adicionarPontos(3, "A") }
         bDoisPontosTimeA.setOnClickListener { adicionarPontos(2, "A") }
@@ -70,8 +72,13 @@ class ScoreboardApp : ComponentActivity() {
         bDoisPontosTimeB.setOnClickListener { adicionarPontos(2, "B") }
         bTLivreTimeB.setOnClickListener { adicionarPontos(1, "B") }
         
-        bReiniciarPartida.setOnClickListener { 
-            reiniciarPartida() 
+        bReiniciarPartida.setOnClickListener {
+            reiniciarPartida()
+        }
+
+        bHub.setOnClickListener {
+            startActivity(Intent(this, AppHub::class.java))
+            finish()
         }
 
         btnStartPause.setOnClickListener {
