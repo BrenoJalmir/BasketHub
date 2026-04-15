@@ -147,7 +147,7 @@ class ScoreboardApp : AppCompatActivity() {
             }
             .setNegativeButton("Não") { _, _ ->
                 resetTimer()
-                Toast.makeText(this, "Iniciando Quarto $quartersPlayed + 1", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Iniciando ${quartersPlayed + 1} Quarto", Toast.LENGTH_SHORT).show()
             }
             .setCancelable(false)
             .create()
