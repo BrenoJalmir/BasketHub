@@ -1,5 +1,10 @@
-# BasketHub
 
+# UFRN
+Trabalho final da primeira unidade da disciplina de DESENVOLVIMENTO DE SISTEMAS PARA DISPOSITIVOS MÓVEIS - UFRN/IMD
+Breno Jalmir de Medeiros Almeida
+Felipe Madureira de Almeida
+
+# BasketHub
 BasketHub é um aplicativo Android focado em basquete, que reúne em um só lugar um placar de jogo, calculadora, histórico de partidas e cálculo de AST%.
 
 ## Funcionalidades
