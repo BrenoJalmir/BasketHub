@@ -2,7 +2,7 @@
     <string name="app_name">SlamHub</string>
     <string name="calculator_app">Calculator App</string>
     <string name="scoreboard_app">Scoreboard App</string>
-    <string name="btn_scoreboard">SlamScore"</string>
+    <string name="btn_scoreboard">SlamScore</string>
     <string name="btn_calculator">SlamCalc</string>
     <string name="btn_games">SlamMatch</string>
     <string name="play">Play</string>
@@ -34,7 +34,7 @@
     <string name="add_3_points">+3 PONTOS</string>
     <string name="add_2_points">+2 PONTOS</string>
     <string name="add_free_throw">Tiro Livre</string>
-    <string name="restart_game">Reiniciar Partida"</string>
+    <string name="restart_game">Reiniciar Partida</string>
     <string name="starting_time">10:00</string>
     <string name="team_a_placeholder">Time A</string>
     <string name="team_b_placeholder">Time B</string>
@@ -44,12 +44,22 @@
     <string name="add_team_a_placeholder">Nome do Time A</string>
     <string name="add_team_b_placeholder">Nome do Time B</string>
     <string name="add_team_a_points">Pontuação do Time A</string>
-    <string name="add_team_b_points">Pontuação do Time B"</string>
+    <string name="add_team_b_points">Pontuação do Time B</string>
     <string name="date_example">Data (Ex: 25/05/2024)*</string>
     <string name="hour_example">Hora (Ex: 14:30)*</string>
     <string name="number_of_quarters">Número de Quartos</string>
     <string name="save_match">Salvar Partida</string>
-    <string name="add_match">Adicionar Partida"</string>
+    <string name="add_match">Adicionar Partida</string>
+    <string name="ast_title">AST%</string>
+    <string name="ast_formula">Assist Ratio = (AST ÷ (FGA + (0.44 × FTA) + AST + TO)) × 100</string>
+    <string name="ast_hint_ast">AST (Assists)</string>
+    <string name="ast_hint_fga">FGA (Field Goal Attempts)</string>
+    <string name="ast_hint_fta">FTA (Free Throw Attempts)</string>
+    <string name="ast_hint_to">TO (Turnovers)</string>
+    <string name="ast_calculate">Calcular AST%</string>
+    <string name="ast_clear">Limpar</string>
+    <string name="ast_result_default">AST Ratio: 0.00%</string>
+    <string name="ast_formula_label">Cálculo: —</string>
     <string name="matches_history">Histórico de Partidas</string>
     <string name="delete_match_description">Remover partida</string>
     <string name="ast_percent">AST%</string>

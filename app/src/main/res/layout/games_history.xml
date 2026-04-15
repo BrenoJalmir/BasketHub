@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
-    android:paddingTop="48dp"
-    android:paddingStart="8dp"
-    android:paddingEnd="8dp"
+    android:background="@color/background_dark"
+    android:paddingTop="@dimen/spacing_4xl"
+    android:paddingStart="@dimen/spacing_s"
+    android:paddingEnd="@dimen/spacing_s"
     >
 
     <TextView
@@ -19,7 +19,7 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="@dimen/spacing_l" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMatches"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/spacing_l"
         android:contentDescription="@string/add_match"
         app:srcCompat="@android:drawable/ic_input_add"
         app:tint="@android:color/white"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/spacing_l"
         android:contentDescription="@string/hub"
         app:srcCompat="@android:drawable/ic_menu_revert"
         app:tint="@android:color/white"

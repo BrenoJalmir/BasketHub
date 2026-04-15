@@ -2,10 +2,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
-    android:paddingTop="48dp"
-    android:paddingStart="8dp"
-    android:paddingEnd="8dp"
+    android:background="@color/background_dark"
+    android:paddingTop="@dimen/spacing_4xl"
+    android:paddingStart="@dimen/spacing_s"
+    android:paddingEnd="@dimen/spacing_s"
     >
 
     <LinearLayout
@@ -20,7 +20,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="@dimen/spacing_xxl" />
 
         <EditText
             android:id="@+id/etTeamAName"
@@ -44,7 +44,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="16dp" />
+            android:layout_height="@dimen/space_small" />
 
         <EditText
             android:id="@+id/etTeamBName"
@@ -68,7 +68,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="16dp" />
+            android:layout_height="@dimen/space_small" />
 
         <EditText
             android:id="@+id/etDate"
@@ -105,7 +105,7 @@
             android:id="@+id/btnSaveManualMatch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/spacing_xxl"
             android:text="@string/save_match"
             android:background="@drawable/hub_button_background"
             android:textColor="@android:color/white" />

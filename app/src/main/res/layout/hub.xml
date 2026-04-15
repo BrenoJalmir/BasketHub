@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222">
+    android:background="@color/background_dark">
 
     <!-- Título -->
     <TextView
@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="@dimen/spacing_4xl"
         android:text="@string/app_name"
         android:textColor="@android:color/white"
         android:textSize="32sp"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="@dimen/spacing_xxl">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,23 +36,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginEnd="12dp"
+                android:layout_marginEnd="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:background="@drawable/hub_button_background"
-                android:paddingVertical="24dp"
+                android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/hub_icon_size"
+                    android:layout_height="@dimen/hub_icon_size"
                     android:src="@drawable/ic_hoop" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/spacing_s"
                     android:text="@string/btn_scoreboard"
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />
@@ -64,23 +64,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:background="@drawable/hub_button_background"
-                android:paddingVertical="24dp"
+                android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/hub_icon_size"
+                    android:layout_height="@dimen/hub_icon_size"
                     android:src="@drawable/ic_ball" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/spacing_s"
                     android:text="@string/btn_calculator"
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />
@@ -89,7 +89,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="32dp" />
+            android:layout_height="@dimen/space_medium" />
 
     
         <LinearLayout
@@ -103,23 +103,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginEnd="12dp"
+                android:layout_marginEnd="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:background="@drawable/hub_button_background"
-                android:paddingVertical="24dp"
+                android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/hub_icon_size"
+                    android:layout_height="@dimen/hub_icon_size"
                     android:src="@drawable/ic_dunk" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/spacing_s"
                     android:text="@string/btn_games"
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />

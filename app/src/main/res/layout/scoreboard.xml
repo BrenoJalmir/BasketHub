@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
+    android:background="@color/background_dark"
     tools:context=".ScoreboardApp">
 
     <LinearLayout
@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="@dimen/spacing_l"
                 android:text="@string/team_a_placeholder"
                 android:inputType="textCapCharacters"
                 android:textSize="14sp"
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
-                android:padding="4dp"
+                android:padding="@dimen/spacing_xs"
                 android:text="@string/str_0"
                 android:textSize="54sp"
                 android:textColor="@android:color/white" />
@@ -49,7 +49,7 @@
                 android:id="@+id/tresPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/spacing_s"
                 android:text="@string/add_3_points"
                 android:background="@drawable/hub_button_background"
                 android:textColor="@android:color/white" />
@@ -75,10 +75,10 @@
         </LinearLayout>
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="@dimen/divider_thickness"
             android:layout_height="match_parent"
             android:background="@android:color/darker_gray"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="@dimen/spacing_l" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -91,7 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="@dimen/spacing_l"
                 android:text="@string/team_b_placeholder"
                 android:inputType="textCapCharacters"
                 android:textSize="14sp"
@@ -106,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="4dp"
+                android:padding="@dimen/spacing_xs"
                 android:text="@string/str_0"
                 android:textSize="54sp"
                 android:fontFamily="sans-serif"
@@ -116,7 +116,7 @@
                 android:id="@+id/tresPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/spacing_s"
                 android:text="@string/add_3_points"
                 android:background="@drawable/hub_button_background"
                 android:textColor="@android:color/white" />
@@ -147,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layoutPlacar"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/spacing_xl"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -169,7 +169,7 @@
                 android:id="@+id/btnStartPause"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/spacing_s"
                 android:text="@string/play"
                 android:background="@drawable/hub_button_background"
                 android:textColor="@android:color/white" />
@@ -191,16 +191,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:layout_marginBottom="32dp">
+        android:paddingLeft="@dimen/spacing_3xl"
+        android:paddingRight="@dimen/spacing_3xl"
+        android:layout_marginBottom="@dimen/spacing_3xl">
 
         <Button
             android:id="@+id/btnHub"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hub"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="@dimen/spacing_m"
             android:background="@drawable/hub_button_background"
             android:textColor="@android:color/white" />
 
