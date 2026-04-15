@@ -13,8 +13,8 @@
     <color name="hint_light">#AAAAAA</color>
     <color name="hint_medium">#BDBDBD</color>
     <color name="text_secondary_light">#D9D9D9</color>
-    <color name="accent_orange">#FD6F00</color>
+    <color name="accent_orange">#c25400</color>
     <color name="text_primary">#FFFFFFFF</color>
-    <color name="accent_calc">#FD6F00</color>
-    <color name="hub_tile_bg">#FD6F00</color>
+    <color name="accent_calc">#c25400</color>
+    <color name="hub_tile_bg">#c25400</color>
 </resources>
