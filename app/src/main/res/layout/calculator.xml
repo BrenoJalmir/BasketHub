@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="48dp"
-    android:paddingStart="8dp"
-    android:paddingEnd="8dp"
-    android:background="#222222">
+    android:paddingTop="@dimen/spacing_4xl"
+    android:paddingStart="@dimen/spacing_s"
+    android:paddingEnd="@dimen/spacing_s"
+    android:background="@color/background_dark">
 
     <!-- Display da calculadora -->
     <TextView
@@ -203,7 +203,7 @@
             android:text="@string/ast_percent"
             android:textColor="@android:color/white"
             android:background="@drawable/hub_button_background"
-            app:backgroundTint="#FD6F00" />
+            app:backgroundTint="@color/accent_orange" />
     </GridLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -214,7 +214,7 @@
         android:text="@string/hub"
         android:background="@drawable/hub_button_background"
         android:textColor="@android:color/white"
-        app:backgroundTint="#FD6F00"
+        app:backgroundTint="@color/accent_orange"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="32dp"
