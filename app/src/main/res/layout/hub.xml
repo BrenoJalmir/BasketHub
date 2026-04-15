@@ -39,7 +39,7 @@
                 android:layout_marginEnd="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/hub_button_background"
+                android:background="@drawable/hub_tile_background"
                 android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
@@ -67,7 +67,7 @@
                 android:layout_marginStart="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/hub_button_background"
+                android:background="@drawable/hub_tile_background"
                 android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
@@ -106,7 +106,7 @@
                 android:layout_marginEnd="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/hub_button_background"
+                android:background="@drawable/hub_tile_background"
                 android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
@@ -141,7 +141,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/spacing_4xl"
         android:text="@string/toggle_theme"
-        android:background="@drawable/hub_button_background"
+        android:background="@drawable/hub_tile_background"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>

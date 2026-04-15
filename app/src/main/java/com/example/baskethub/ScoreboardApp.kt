@@ -176,12 +176,14 @@ class ScoreboardApp : AppCompatActivity() {
     }
 
     private fun updatePointButtonsState() {
-        bTresPontosTimeA.isEnabled = isTimerRunning
-        bDoisPontosTimeA.isEnabled = isTimerRunning
-        bTLivreTimeA.isEnabled = isTimerRunning
-        bTresPontosTimeB.isEnabled = isTimerRunning
-        bDoisPontosTimeB.isEnabled = isTimerRunning
-        bTLivreTimeB.isEnabled = isTimerRunning
+        // Mantém os botões visualmente com a mesma cor dos demais,
+        // o controle de quando podem marcar pontos já é feito em adicionarPontos.
+        bTresPontosTimeA.isEnabled = true
+        bDoisPontosTimeA.isEnabled = true
+        bTLivreTimeA.isEnabled = true
+        bTresPontosTimeB.isEnabled = true
+        bDoisPontosTimeB.isEnabled = true
+        bTLivreTimeB.isEnabled = true
     }
 
     fun adicionarPontos(pontos: Int, time: String) {

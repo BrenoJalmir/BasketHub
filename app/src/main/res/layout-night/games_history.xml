@@ -7,8 +7,7 @@
     android:background="@color/background_dark"
     android:paddingTop="@dimen/spacing_4xl"
     android:paddingStart="@dimen/spacing_s"
-    android:paddingEnd="@dimen/spacing_s"
-    >
+    android:paddingEnd="@dimen/spacing_s">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -39,7 +38,7 @@
         android:contentDescription="@string/add_match"
         app:srcCompat="@android:drawable/ic_input_add"
         app:tint="@android:color/white"
-        android:background="@drawable/hub_tile_background" />
+        app:backgroundTint="@color/accent_orange" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnHubHistory"
@@ -51,6 +50,6 @@
         android:contentDescription="@string/hub"
         app:srcCompat="@android:drawable/ic_menu_revert"
         app:tint="@android:color/white"
-        android:background="@drawable/hub_tile_background" />
+        app:backgroundTint="@color/accent_orange" />
 
 </RelativeLayout>
