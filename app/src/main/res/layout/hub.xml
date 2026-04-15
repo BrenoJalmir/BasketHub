@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/spacing_4xl"
         android:text="@string/app_name"
-        android:textColor="@android:color/white"
+        android:textColor="@color/text_primary"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
                 android:layout_marginEnd="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/hub_button_background"
+                android:background="@drawable/hub_tile_background"
                 android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
@@ -67,7 +67,7 @@
                 android:layout_marginStart="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/hub_button_background"
+                android:background="@drawable/hub_tile_background"
                 android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
@@ -106,7 +106,7 @@
                 android:layout_marginEnd="@dimen/spacing_m"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@drawable/hub_button_background"
+                android:background="@drawable/hub_tile_background"
                 android:paddingVertical="@dimen/spacing_xxl"
                 android:clickable="true"
                 android:focusable="true">
@@ -132,5 +132,16 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_toggle_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hub_buttons_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spacing_4xl"
+        android:text="@string/toggle_theme"
+        android:background="@drawable/hub_tile_background"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>

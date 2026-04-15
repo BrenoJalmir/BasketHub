@@ -64,4 +64,5 @@
     <string name="delete_match_description">Remover partida</string>
     <string name="ast_percent">AST%</string>
     <string name="hub">Hub</string>
+    <string name="toggle_theme">Alternar tema</string>
 </resources>

@@ -14,7 +14,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@drawable/hub_button_background"
+        android:background="@drawable/calc_button_background"
         android:gravity="end"
         android:padding="16dp"
         android:text="@string/str_0"
@@ -203,7 +203,7 @@
             android:text="@string/ast_percent"
             android:textColor="@android:color/white"
             android:background="@drawable/hub_button_background"
-            app:backgroundTint="@color/accent_orange" />
+            app:backgroundTint="@color/accent_calc" />
     </GridLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -214,7 +214,6 @@
         android:text="@string/hub"
         android:background="@drawable/hub_button_background"
         android:textColor="@android:color/white"
-        app:backgroundTint="@color/accent_orange"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="32dp"

@@ -8,14 +8,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONArray
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-class ScoreboardApp : ComponentActivity() {
+class ScoreboardApp : AppCompatActivity() {
     private var pontuacaoTimeA: Int = 0
     private var pontuacaoTimeB: Int = 0
     private var quartersPlayed: Int = 0
@@ -176,12 +176,14 @@ class ScoreboardApp : ComponentActivity() {
     }
 
     private fun updatePointButtonsState() {
-        bTresPontosTimeA.isEnabled = isTimerRunning
-        bDoisPontosTimeA.isEnabled = isTimerRunning
-        bTLivreTimeA.isEnabled = isTimerRunning
-        bTresPontosTimeB.isEnabled = isTimerRunning
-        bDoisPontosTimeB.isEnabled = isTimerRunning
-        bTLivreTimeB.isEnabled = isTimerRunning
+        // Mantém os botões visualmente com a mesma cor dos demais,
+        // o controle de quando podem marcar pontos já é feito em adicionarPontos.
+        bTresPontosTimeA.isEnabled = true
+        bDoisPontosTimeA.isEnabled = true
+        bTLivreTimeA.isEnabled = true
+        bTresPontosTimeB.isEnabled = true
+        bDoisPontosTimeB.isEnabled = true
+        bTLivreTimeB.isEnabled = true
     }
 
     fun adicionarPontos(pontos: Int, time: String) {
