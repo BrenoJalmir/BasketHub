@@ -53,4 +53,5 @@
     <string name="matches_history">Histórico de Partidas</string>
     <string name="delete_match_description">Remover partida</string>
     <string name="ast_percent">AST%</string>
+    <string name="hub">Hub</string>
 </resources>

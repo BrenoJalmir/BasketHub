@@ -72,6 +72,12 @@ class CalculatorApp : AppCompatActivity() {
             startActivity(Intent(this, AstActivity::class.java))
         }
 
+        // Botão Hub (voltar para o hub)
+        findViewById<Button>(R.id.btnHubCalc).setOnClickListener {
+            startActivity(Intent(this, AppHub::class.java))
+            finish()
+        }
+
         updateDisplay()
     }
 

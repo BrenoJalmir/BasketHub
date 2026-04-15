@@ -185,15 +185,33 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/reiniciarPartida"
+    <LinearLayout
+        android:id="@+id/layoutBottomButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/restart_game"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"
-        android:background="@drawable/hub_button_background"
-        android:textColor="@android:color/white" />
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_marginBottom="32dp">
+
+        <Button
+            android:id="@+id/btnHub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hub"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/reiniciarPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/restart_game"
+            android:background="@drawable/hub_button_background"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
 
 </RelativeLayout>

@@ -26,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/tvTitle"
+        android:layout_above="@id/btnHubHistory"
         tools:listitem="@layout/item_match" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -37,6 +38,18 @@
         android:layout_margin="16dp"
         android:contentDescription="@string/add_match"
         app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@android:color/white"
+        app:backgroundTint="#FD6F00" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnHubHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/hub"
+        app:srcCompat="@android:drawable/ic_menu_revert"
         app:tint="@android:color/white"
         app:backgroundTint="#FD6F00" />
 

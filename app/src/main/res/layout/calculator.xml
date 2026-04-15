@@ -33,7 +33,7 @@
         android:columnCount="4"
         android:rowCount="6"
         android:useDefaultMargins="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnHubCalc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtResultado">
@@ -205,4 +205,20 @@
             android:background="@drawable/hub_button_background"
             app:backgroundTint="#FD6F00" />
     </GridLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHubCalc"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hub"
+        android:background="@drawable/hub_button_background"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#FD6F00"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
