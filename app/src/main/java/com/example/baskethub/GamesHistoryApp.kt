@@ -32,6 +32,12 @@ class GamesHistoryApp : ComponentActivity() {
             deleteMatch(position)
         }
         rvMatches.adapter = adapter
+
+        val btnHubHistory: FloatingActionButton = findViewById(R.id.btnHubHistory)
+        btnHubHistory.setOnClickListener {
+            startActivity(Intent(this, AppHub::class.java))
+            finish()
+        }
     }
 
     override fun onResume() {
