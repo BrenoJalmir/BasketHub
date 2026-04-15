@@ -7,7 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <!-- App custom colors for light theme -->
+    <!-- Project colors -->
     <color name="background_dark">#FAFAFA</color>
     <color name="card_background_dark">#FFFFFF</color>
     <color name="hint_light">#888888</color>
@@ -15,7 +15,6 @@
     <color name="text_secondary_light">#666666</color>
     <color name="accent_orange">#FD6F00</color>
     <color name="text_primary">#212121</color>
-        <!-- Calculator accent (black on light) -->
-        <color name="accent_calc">#000000</color>
+    <color name="accent_calc">#000000</color>
     <color name="hub_tile_bg">#000000</color>
 </resources>
